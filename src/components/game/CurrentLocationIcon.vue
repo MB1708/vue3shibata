@@ -1,3 +1,6 @@
+<!--
+現在地のアイコン
+-->
 <template>
   <img
     src='../../assets/icon/current_location.svg'

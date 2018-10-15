@@ -1,3 +1,7 @@
+<!--
+小窓
+クーポン
+-->
 <template>
   <window-wrapper switchKey='coupon'>
     <span id='unique'>

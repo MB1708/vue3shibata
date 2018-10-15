@@ -1,3 +1,6 @@
+<!--
+建築物のアイコン
+-->
 <template>
   <img
     :src='building.iconsImage'

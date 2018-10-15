@@ -1,3 +1,6 @@
+<!--
+危険箇所のアイコン
+-->
 <template>
   <img
     :src='[saveData[danger.type][i] ? danger.src : danger.iconsImage]'

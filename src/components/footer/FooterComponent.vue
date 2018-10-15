@@ -1,3 +1,6 @@
+<!--
+フッター
+-->
 <template>
   <footer
     id='footer'

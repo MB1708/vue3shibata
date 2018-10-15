@@ -1,3 +1,7 @@
+<!--
+小窓
+場所や妖怪の詳細
+-->
 <template>
   <window-wrapper switchKey='description'>
     <div id='description__wrapper'>

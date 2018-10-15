@@ -1,3 +1,6 @@
+<!--
+大元のコンポーネント  
+-->
 <template>
   <div id='wrapper'>
     <game-field/>

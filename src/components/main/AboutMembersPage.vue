@@ -1,3 +1,6 @@
+<!--
+メインの5ページのうちの5つ目
+-->
 <template>
   <article-wrapper>
     <title-wrapper>アクティブストリートのなかまたち</title-wrapper>

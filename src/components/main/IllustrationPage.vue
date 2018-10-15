@@ -1,3 +1,6 @@
+<!--
+メインの5ページのうちの4つ目
+-->
 <template>
   <article-wrapper>
     <title-wrapper>ようかい・おふだずかん</title-wrapper>

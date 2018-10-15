@@ -1,3 +1,7 @@
+<!--
+ヘッダー
+5つのボタンを内包する
+-->
 <template>
   <header
     id='header'

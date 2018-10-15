@@ -1,3 +1,7 @@
+<!--
+図鑑の個々のカード
+妖怪と図鑑
+-->
 <template>
   <div class='card'>
     <div class='card__bg'/>

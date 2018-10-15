@@ -1,3 +1,6 @@
+<!--
+メインの5ページのうちの1つ目
+-->
 <template>
   <article-wrapper>
     <title-wrapper>しばたアクティブストリート</title-wrapper>

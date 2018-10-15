@@ -1,3 +1,6 @@
+<!--
+全ての記事をラップするやつ
+-->
 <template>
     <transition name='wrapper__trantision'>
       <article class='article__wrapper'>

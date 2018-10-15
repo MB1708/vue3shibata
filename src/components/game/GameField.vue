@@ -1,3 +1,6 @@
+<!--
+地図全体
+-->
 <template>
   <div id='gamefield__wrapper'>
     <div id='gamefield'>

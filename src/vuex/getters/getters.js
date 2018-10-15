@@ -5,8 +5,8 @@ export default ({
   /**
    * デバイスがスマホか否か
    */
-  isSP: state => {
-    const clu = device => state.ua.includes(device)
+  isSP: () => {
+    const clu = device => navigator.userAgent.includes(device)
     return clu('iPhone')
       || clu('iPod')
       || clu('iPad')
@@ -15,7 +15,7 @@ export default ({
   /**
    * 妖怪と危険箇所の配列をマージ(aaabbb を ababab にする)
    */
-  mergeCheckPoints: (state, getters) =>
+  mergeCheckPoints: (_, getters) =>
     getters.ghostsPositions.map((ghost, i) =>
       ({
         ghost,
@@ -25,7 +25,7 @@ export default ({
   /**
    * 妖怪と危険箇所の配列を調整してカードの縦幅を揃える
    */
-  alignCheckPoints: (state, getters) => {
+  alignCheckPoints: (_, getters) => {
     const longestDescriptionsLength = getters.mergeCheckPoints.reduce((pre, cur) =>
       Math.max(cur.ghost.description.length, cur.danger.description.length, pre)
     ,0)
@@ -78,7 +78,6 @@ export default ({
     && state.currentCoords.long < state.areaShibata.right
     && state.areaShibata.bottom < state.currentCoords.lat
     && state.currentCoords.lat < state.areaShibata.top,
-
   /**
    * 緯度経度をパーセントに変換
    */

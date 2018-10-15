@@ -1,3 +1,7 @@
+<!--
+たくさんあるセリフのカード
+妖怪が上に書いてあるやつ
+-->
 <template>
   <section
     class='section'

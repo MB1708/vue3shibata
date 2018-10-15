@@ -1,3 +1,7 @@
+<!--
+ヘッダーのボタン
+押すと各々のページに飛ぶ
+-->
 <template>
   <router-link
     class='wrapper__button'

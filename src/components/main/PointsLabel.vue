@@ -1,3 +1,7 @@
+<!--
+ポイントのページの得点のバー
+4種類ぶん
+-->
 <template>
   <div class='points__wrapper'>
     <div class='points__label'>

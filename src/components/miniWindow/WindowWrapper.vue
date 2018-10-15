@@ -1,3 +1,7 @@
+<!--
+小窓
+小窓をラップする半透明の黒の背景
+-->
 <template>
   <transition name='window__transition'>
     <div

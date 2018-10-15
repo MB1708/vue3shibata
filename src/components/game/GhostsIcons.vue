@@ -1,3 +1,6 @@
+<!--
+妖怪のアイコン
+-->
 <template>
   <img
     :src='[saveData[ghost.type][i] ? ghost.src : ghost.iconsImage]'

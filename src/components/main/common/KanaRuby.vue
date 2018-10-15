@@ -1,3 +1,6 @@
+<!--
+ふりがな
+-->
 <template>
   <span v-once>
     <span

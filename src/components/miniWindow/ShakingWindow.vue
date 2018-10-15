@@ -1,3 +1,7 @@
+<!--
+小窓
+ロード中のアニメーション
+-->
 <template>
   <window-wrapper switchKey='shaking'>
     <img

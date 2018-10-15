@@ -1,3 +1,6 @@
+<!--
+メインの5ページが入る場所の確保
+-->
 <template>
   <main id='main'>
     <router-view/>

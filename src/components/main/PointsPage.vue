@@ -1,3 +1,6 @@
+<!--
+メインの5ページのうちの3つ目
+-->
 <template>
   <article-wrapper>
     <title-wrapper>たんさくポイント</title-wrapper>

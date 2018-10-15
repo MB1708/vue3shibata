@@ -1,3 +1,6 @@
+<!--
+メインの5ページのうちの2つ目
+-->
 <template>
   <div id='operation__wrapper'>
     <div class='operation__board' :class='{"operation__board--hidden": !isSP}'>

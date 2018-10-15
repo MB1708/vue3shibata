@@ -1,3 +1,7 @@
+<!--
+小窓
+小さい地図
+-->
 <template>
   <window-wrapper switchKey='miniMap'>
     <img

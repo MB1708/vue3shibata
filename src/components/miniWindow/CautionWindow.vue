@@ -1,3 +1,7 @@
+<!--
+小窓
+警告
+-->
 <template>
   <window-wrapper switchKey='caution'>
     <img
