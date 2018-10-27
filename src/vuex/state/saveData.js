@@ -6,7 +6,7 @@ export default {
   areas:[false, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, true, false, ],
 */
   
-  ghosts: Array(8).fill(false),
+  ghosts: Array(14).fill(false),
   dangers: Array(8).fill(false),
   areas: Array(64).fill(false),
   

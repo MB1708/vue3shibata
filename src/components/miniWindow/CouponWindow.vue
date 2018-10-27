@@ -9,7 +9,7 @@
     <img
       src='../../assets/shibata_logo_orange.svg'
       alt='クーポン'
-      v-if='calcPoints.sum >= 150'
+      v-if='calcPoints.sum >= 100'
       id='coupon__window'
     />
     </span>

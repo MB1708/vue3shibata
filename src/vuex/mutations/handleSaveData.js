@@ -18,7 +18,7 @@ export default {
       localStorage.removeItem('279saveData')
       state.saveData = {
         uniqueNum: 0,
-        ghosts: Array(8).fill(false),
+        ghosts: Array(14).fill(false),
         dangers: Array(8).fill(false),
         areas: Array(64).fill(false),
       }

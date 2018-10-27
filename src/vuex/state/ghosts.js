@@ -7,47 +7,49 @@ import ghost4 from '@/assets/ghost/koitu.png'
 import ghost5 from '@/assets/ghost/rinutus8.png'
 import ghost6 from '@/assets/ghost/shubataro.png'
 import ghost7 from '@/assets/ghost/yuureisan.png'
+import ghost8 from '@/assets/ghost/hana.jpg'
+import ghost9 from '@/assets/ghost/pet.jpg'
 
 export default [
   {
     name: 'あかゑい',
-    description: 'しまくらいの おおきさがある うみにすむ おばけ。',
+    description: 'COROAIにあらわれた、しまくらいの おおきさがある うみにすむ おばけ。',
     src: ghost0,
     author: '日比野晟正 (大同大学)',
-    lat: 35.0743,//こっちが本物
-    long: 136.9109,//こっちが本物
+    lat: 35.0769,//こっちが本物
+    long: 136.9115,//こっちが本物
     //lat: 35.0794,//こっちはテスト用
     //long: 136.9060,//こっちはテスト用
   },
   {
     name:'すねこすり',
-    description: 'ひとのあしに ふわふわのからだを こすりつけて おどろかせる おばけ。',
+    description: 'ピアゴにあらわれた、ひとのあしに ふわふわのからだを こすりつけて おどろかせる おばけ。',
     src: ghost1,
     author: '仙敷絵理 (大同大学)',
-    lat: 35.0737,//こっちが本物
-    long: 136.9113,//こっちが本物
+    lat: 35.0765,//こっちが本物
+    long: 136.9108,//こっちが本物
     //lat: 35.0794,//こっちはテスト用
     //long: 136.9060,//こっちはテスト用
   },
   {
     name:'いったんもめん',
-    description: 'ゆうがた ふわふわ とぶ ながい ぬの の おばけ。',
+    description: '小島印房にあらわれた、ゆうがた ふわふわ とぶ ながい ぬの の おばけ。',
     src: ghost2,
     author: '小池朔弘 (大同大学)',
-    lat: 35.0738,
-    long: 136.9120,
+    lat: 35.0750,
+    long: 136.9105,
   },
   {
     name:'ほおずきおばけ',
-    description: 'よなかに あかくひかり うかぶ ほおずきの おばけ。',
+    description: '喫茶南苑にあらわれた、よなかに あかくひかり うかぶ ほおずきの おばけ。',
     src: ghost3,
     author: '匿名希望 (大同大学)',
-    lat: 35.0770,
-    long: 136.9116,
+    lat: 35.0747,
+    long: 136.9106,
   },
   {
     name:'ばけちょうちん',
-    description: 'よなかに なるとうごきだす ふるい ちょうちん の おばけ。',
+    description: '松老園にあらわれた、よなかに なるとうごきだす ふるい ちょうちん の おばけ。',
     src: ghost4,
     author: '石野要 (大同大学)',
     lat: 35.0745,
@@ -55,26 +57,75 @@ export default [
   },
   {
     name:'はろゐんごーすと',
-    description: 'はろゐんにさわぐ しろい ふわふわした からだをもつ おばけ。',
+    description: '福井薬局にあらわれた、はろゐんにさわぐ しろい ふわふわした からだをもつ おばけ。',
     src: ghost5,
     author: '松崎涼太 (大同大学)',
-    lat: 35.0740,
-    long: 136.9105,
+    lat: 35.0746,
+    long: 136.9110,
   },
   {
     name:'ばけねこ',
-    description: 'にほんあしで あるいて ことばをはなす ねこの おばけ。',
+    description: '宇佐美工業にあらわれた、にほんあしで あるいて ことばをはなす ねこの おばけ。',
     src: ghost6,
     author: '仙敷絵理 (大同大学)',
-    lat: 35.0735,
-    long: 136.9105,
+    lat: 35.0741,
+    long: 136.9110,
   },
   {
     name:'はろゐんごーすと',
-    description: 'はろゐんにさわぐ しろい ふわふわした からだをもつ おばけ。',
+    description: 'たつたやにあらわれた、はろゐんにさわぐ しろい ふわふわした からだをもつ おばけ。',
     src: ghost7,
     author: '林このみ (大同大学)',
+    lat: 35.0740,
+    long: 136.9105,
+  },
+  //added
+  {
+    name: 'あかゑい',
+    description: 'デイサービスはくすいにあらわれた、しまくらいの おおきさがある うみにすむ おばけ。',
+    src: ghost0,
+    author: '日比野晟正 (大同大学)',
+    lat: 35.0737,
+    long: 136.9100,
+  },
+  {
+    name:'すねこすり',
+    description: 'ゑびすやにあらわれた、ひとのあしに ふわふわのからだを こすりつけて おどろかせる おばけ。',
+    src: ghost1,
+    author: '仙敷絵理 (大同大学)',
+    lat: 35.0738,
+    long: 136.9114,
+  },
+  {
+    name:'いったんもめん',
+    description: 'しろがねやにあらわれた、ゆうがた ふわふわ とぶ ながい ぬの の おばけ。',
+    src: ghost2,
+    author: '小池朔弘 (大同大学)',
     lat: 35.0728,
     long: 136.9103,
+  },
+  {
+    name:'ほおずきおばけ',
+    description: 'みよしやにあらわれた、よなかに あかくひかり うかぶ ほおずきの おばけ。',
+    src: ghost3,
+    author: '匿名希望 (大同大学)',
+    lat: 35.0728,
+    long: 136.9114,
+  },
+  {
+    name:'はなおばけ',
+    description: 'きものサロン丸東にあらわれた、はな の おばけ。',
+    src: ghost8,
+    author: '鯉江政称 (大同大学)',
+    lat: 35.0750,
+    long: 136.9100,
+  },
+  {
+    name:'ペットボトルおばけ',
+    description: '丸久精肉店にあらわれた、ペットボトåルの おばけ。',
+    src: ghost9,
+    author: '鯉江政称 (大同大学)',
+    lat: 35.0738,
+    long: 136.9119,
   },
 ]

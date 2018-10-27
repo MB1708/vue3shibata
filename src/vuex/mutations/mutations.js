@@ -57,6 +57,12 @@ export default ({
     state.currentCoords.long = coords.longitude
     state.currentCoords.lat = coords.latitude
     
+    //対症療法/////////////////////////////////////////////
+    if(state.saveData.ghosts.length === 8){
+      state.saveData.ghosts.push(false,false,false,false,false,false,)
+    }
+    //対症療法/////////////////////////////////////////////
+
     //セーブデータを更新
     state.saveData.ghosts = state.ghosts.map((val, ind) =>
       state.saveData.ghosts[ind]

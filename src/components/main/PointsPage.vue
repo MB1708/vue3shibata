@@ -15,12 +15,12 @@
       <div
         v-if='isSP'
         class='coupon__btn'
-        :class='{"coupon__btn--cleared": calcPoints.sum >= 150}'
-        @click='calcPoints.sum >= 150 && toggleMiniMap("coupon"); registarSavedata()'
+        :class='{"coupon__btn--cleared": calcPoints.sum >= 100}'
+        @click='calcPoints.sum >= 100 && toggleMiniMap("coupon"); registarSavedata()'
       >
         {{
-          calcPoints.sum &lt; 150
-          ? `あと${150 - calcPoints.sum}ポイント`
+          calcPoints.sum &lt; 100
+          ? `あと${100 - calcPoints.sum}ポイント`
           : 'クーポンを表示'
         }}
       </div>
