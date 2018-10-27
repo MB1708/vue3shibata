@@ -69,7 +69,7 @@ export default [
     src: ghost6,
     author: '仙敷絵理 (大同大学)',
     lat: 35.0741,
-    long: 136.9110,
+    long: 136.9109,
   },
   {
     name:'はろゐんごーすと',
