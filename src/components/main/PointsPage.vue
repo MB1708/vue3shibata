@@ -15,12 +15,12 @@
       <div
         v-if='isSP'
         class='coupon__btn'
-        :class='{"coupon__btn--cleared": calcPoints.sum >= 100}'
-        @click='calcPoints.sum >= 100 && toggleMiniMap("coupon"); registarSavedata()'
+        :class='{"coupon__btn--cleared": calcPoints.sum >= clearPoints}'
+        @click='calcPoints.sum >= clearPoints && toggleMiniMap("coupon"); registarSavedata()'
       >
         {{
-          calcPoints.sum &lt; 100
-          ? `あと${100 - calcPoints.sum}ポイント`
+          calcPoints.sum &lt; clearPoints
+          ? `あと${clearPoints - calcPoints.sum}ポイント`
           : 'クーポンを表示'
         }}
       </div>
@@ -54,6 +54,7 @@ export default {
     ...mapGetters([
       'calcPoints',
       'isSP',
+      'clearPoints',
     ]),
   },
   methods: {

@@ -2,6 +2,11 @@ import ghostsIcon from '@/assets/menu/fire_ball.svg'
 import dangersIcon from '@/assets/menu/illustration_enter.svg'
 
 export default ({
+
+  /**
+   * クリアに必要なポイント
+   */
+  clearPoints: () => 20,
   /**
    * デバイスがスマホか否か
    */

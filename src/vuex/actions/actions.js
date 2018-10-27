@@ -47,8 +47,8 @@ export default ({
       dispatch('loopGame')
       //ゲームを開始状態にする
       commit('getStartedGame')
+      dispatch('readyToScroll', map)
       if(!getters.isInThisArea){
-        dispatch('readyToScroll', map)
         commit('toggleMiniMap', 'caution')
         commit('updateCaution', {
           title: "柴田町においで！",

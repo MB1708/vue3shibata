@@ -45,24 +45,22 @@ export default ({
   calcCoords: (state, coords) => {
     //柴田の経度
     const widthShibata = state.areaShibata.right - state.areaShibata.left
+
     //柴田の緯度
     const heightShibata = state.areaShibata.top - state.areaShibata.bottom
+
     //柴田左端から見た現在地の経度
     const widthNow = coords.longitude - state.areaShibata.left
+
     //柴田上端から見た現在地の緯度
     const heightNow = state.areaShibata.top - coords.latitude
+
     //柴田左端から見た現在地の経度(%) view用
 
     //currentPositionを更新 view用
     state.currentCoords.long = coords.longitude
     state.currentCoords.lat = coords.latitude
     
-    //対症療法/////////////////////////////////////////////
-    if(state.saveData.ghosts.length === 8){
-      state.saveData.ghosts.push(false,false,false,false,false,false,)
-    }
-    //対症療法/////////////////////////////////////////////
-
     //セーブデータを更新
     state.saveData.ghosts = state.ghosts.map((val, ind) =>
       state.saveData.ghosts[ind]
@@ -81,8 +79,8 @@ export default ({
       ||(
         widthShibata / 8 * ~~(ind % 8) < widthNow
         && widthNow < widthShibata / 8 * ~~(ind % 8 + 1)
-        && heightShibata / 8 * ~~(7 - ind / 8) < (heightShibata - heightNow)
-        && (heightShibata - heightNow) < heightShibata / 8 * ~~(7 - ind / 8 + 1)
+        && heightShibata / 8 * (7 - ~~(ind / 8)) < (heightShibata - heightNow)
+        && (heightShibata - heightNow) < heightShibata / 8 * (7 - ~~(ind / 8 - 1))
       )
     )
   },

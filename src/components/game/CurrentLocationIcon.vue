@@ -25,8 +25,8 @@
       ]),
       styles(){
         return{
-          top: `calc(${this.$store.getters.currentPosition.top}% - 16px)`,
-          left: `calc(${this.$store.getters.currentPosition.left}% - 16px)`,
+          top: `calc(${this.$store.getters.currentPosition.top}% - 12px)`,
+          left: `calc(${this.$store.getters.currentPosition.left}% - 12px)`,
         }
       }
     },
@@ -44,5 +44,6 @@
   border-radius: 50%;
   transition-duration: var(--duraion);
   transition-property: top, left;
+  z-index: 21;
 }
 </style>
