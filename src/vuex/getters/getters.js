@@ -18,42 +18,6 @@ export default ({
       || clu('Android')
   },
   /**
-   * 妖怪と危険箇所の配列をマージ(aaabbb を ababab にする)
-   */
-  mergeCheckPoints: (_, getters) =>
-    getters.ghostsPositions.map((ghost, i) =>
-      ({
-        ghost,
-        danger: getters.dangersPositions[i],
-      })
-    ),
-  /**
-   * 妖怪と危険箇所の配列を調整してカードの縦幅を揃える
-   */
-  alignCheckPoints: (_, getters) => {
-    const longestDescriptionsLength = getters.mergeCheckPoints.reduce((pre, cur) =>
-      Math.max(cur.ghost.description.length, cur.danger.description.length, pre)
-    ,0)
-    return getters.mergeCheckPoints.map(val =>
-      ({
-        ghost: {
-          ...val.ghost,
-          alignedDescription: {
-            description: val.ghost.description,
-            space: ('　').repeat(longestDescriptionsLength - val.ghost.description.length)
-          },
-        },
-        danger: {
-          ...val.danger,
-          alignedDescription: {
-            description: val.danger.description,
-            space: ('　').repeat(longestDescriptionsLength - val.danger.description.length)
-          },
-        },
-      })
-    )
-  },
-  /**
    * ポイントの合計を算出する 
    */
   calcPoints: (state, getters) =>

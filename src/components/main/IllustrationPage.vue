@@ -12,19 +12,25 @@
     ※たんけんゲームいがいはパソコンからでもできるよ！
     </section-wrapper>
     <div
-      v-for='(checkPoint, i) in alignCheckPoints'
-      :key='i'
+      v-for='(ghost, i) in ghostsPositions'
+      :key='i * 10 + 1'
       class='cards__wrapper'
     >
       <div class='card__wrapper'>
         <illustration-wrapper
-          :point='checkPoint.ghost'
+          :point='ghost'
           :isClear='saveData.ghosts[i]'
         />
       </div>
+    </div>
+    <div
+      v-for='(danger, i) in dangersPositions'
+      :key='i * 1000'
+      class='cards__wrapper'
+    >
       <div class='card__wrapper'>
         <illustration-wrapper
-          :point='checkPoint.danger'
+          :point='danger'
           :isCleared='saveData.dangers[i]'
         />
       </div>
@@ -49,6 +55,8 @@ export default {
   },
   computed: {
     ...mapGetters([
+      'ghostsPositions',
+      'dangersPositions',
       'alignCheckPoints',
       'isSP',
     ]),

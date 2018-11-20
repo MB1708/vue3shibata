@@ -31,14 +31,11 @@
       <span>
         {{
           isCleared
-          ? point.alignedDescription.description
+          ? point.description
           : point.type === "ghosts"
             ? 'しばたちょうをたんけんして、ようかいをあつめよう!'
             : 'しばたちょうをたんけんして、おふだをあつめよう!'
         }}
-      </span>
-      <span>
-        {{point.alignedDescription.space}}
       </span>
     </div>
   </div>
